@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusPilot Dashboard</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background-color: #f3f2f1; margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center; }
+        .card { background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); width: 350px; text-align: center; margin-bottom: 20px; }
+        button { background-color: #0078d4; color: white; border: none; padding: 10px 20px; font-weight: 600; cursor: pointer; width: 100%; border-radius: 4px; }
+        .data-box { background: #faf9f8; border: 1px solid #edebe9; padding: 10px; margin-top: 15px; text-align: left; border-radius: 4px; font-size: 14px; }
+        .status { color: green; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2>🚀 CampusPilot Dashboard</h2>
+        <p>Backend se live data connect karne ke liye niche button dabayein.</p>
+        <button onclick="fetchDashboardData()">Get Student Metrics</button>
+        
+        <div id="result-box" style="display: none;">
+            <h3>📊 Live Data:</h3>
+            <div id="attendance-data" class="data-box"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
